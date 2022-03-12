@@ -1,0 +1,208 @@
+@charset "UTF-8" ;
+/* 共通部分　*/
+html {
+    font-size: 100%;
+}
+body {
+    font-family: "Yu Gothic Medium","遊ゴシック Medium", "YuGothic","遊ゴシック体","ヒラギノ角ゴ Pro W3",sans-serif;
+    line-height: 1.7;
+    color: #432; 
+}
+a {
+    text-decoration: none;
+}
+img {
+    max-width: 100%;
+}
+/* header　*/
+.logo {
+    width: 210px;
+    margin-top: 14px;
+}
+.main-nav {
+    display: flex;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    margin-top: 34px;
+    list-style: none;
+}
+.main-nav li {
+    margin-left: 36px;
+}
+.main-nav a {
+    color: #432;
+}
+.main-nav a:hover {
+    color: #fff;
+}
+.page-header {
+    display: flex;
+    justify-content: space-between;
+}
+.wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 4%;
+}
+/* HOME */
+.home-content {
+    text-align: center;
+    padding: 20px 0;
+}
+.home-content p {
+    font-size: 1.125rem;
+    margin: 10px 0 42px;
+}
+/*見出し*/
+.page-title {
+    font-size: 5rem;
+    font-family: 'Philosopher' , serif;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+/*　ボタン　*/
+.button {
+    font-size: 1.375rem;
+    background: rgb(129, 135, 136);
+    color: #fff;
+    border-radius: 5px;
+    padding: 18px 32px;
+}
+.button:hover {
+    background: #0090aa;
+}
+/*大きな背景画像*/
+.big-bg {
+    background-size: cover;
+    background-position: center top;
+}
+#home {
+    background-image: url(../img/uma.jpg);
+    min-height: 100vh; 
+}
+#home .page-title {
+    text-transform: none;
+}
+#about {
+    background-image: url(../img/uma.jpg);
+    height: 270px;
+    margin-bottom: 40px;
+}
+#about .page-title {
+    text-align: center;
+}
+footer {
+    background: #432;
+    text-align: center;
+    padding: 26px 0;
+}
+footer p {
+    color: #fff;
+    font-size: 0.875rem;
+}
+/*記事部分*/
+article {
+    width: 60%;
+}
+.post-title {
+    font-family: "Yu Mincho", "YuMincho", serif;
+    font-size: 2rem;
+    font-weight: normal;
+}
+.post-title,
+.post-text {
+    margin-left: 120px;
+}
+.post-text {
+    font-size: 1rem;
+    font-weight: normal;
+}
+.article-img {
+    margin-bottom: 20px;
+}
+.article-p {
+    margin-bottom: 1rem;
+}
+
+
+/*サイドバー*/
+aside {
+    width: 35%;
+}
+.about-contents {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+.post-title3 {
+    font-size: 1.375rem;
+    padding: 0 8px 8px;
+    border-bottom: 2px #432 solid;
+    font-weight: normal;
+}
+
+/* CONTACT */
+#contact {
+    background-image: url(../img/uma2.jpg);
+    min-height: 100vh;
+}
+
+/* フォーム */
+form div {
+    margin-bottom: 14px;
+}
+label {
+    font-size: 1.125rem;
+    margin-bottom: 10px;
+    display: block;
+}
+input[type="text"],
+input[type="email"],
+textarea {
+    background: rgba(255,255,255.5);
+    border: 1px #fff solid;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1rem;
+}
+input[type="text"],
+input[type="email"] {
+    width: 100%;
+    max-width: 240px;
+}
+textarea {
+    width: 100%;
+    max-width: 480px;
+    height: 6rem;
+}
+input[type="submit"] {
+    border: none;
+    cursor: pointer;
+    line-height: 1;
+}
+/* 住所 */
+.location-info {
+    font-style: normal;
+    color: #fff;
+}
+
+/* animation */
+.animate {
+    opacity: 0;
+    transition: opacity .10s, transform .5s;
+}
+
+.animate.slide-from-left {
+    transform: translateX(-60px);
+    transition-duration: 3s;
+}
+
+.animate.slide-from-right {
+    transform: translateX(60px);
+    transition-duration: 3s
+}
+
+.animate.appear {
+    opacity: 1;
+    transform: none;
+}
